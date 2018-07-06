@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#64d8fe">
+
+    <EditText
+        android:id="@+id/queryET"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/rounded_corner"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/weatherTV"
+        android:layout_width="228dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:hint="@string/tv_description"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/sendCityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:hint="@string/button_message"
+        android:onClick="sendMessage"/>
+
+
+    <TextView
+        android:id="@+id/temperatureTV"
+        android:layout_width="231dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="195dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:hint="@string/tv_temperature"
+        android:textSize="20dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:layout_width="361dp"
+        android:layout_height="212dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>
